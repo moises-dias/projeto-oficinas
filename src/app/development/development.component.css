@@ -1,0 +1,14 @@
+.container {
+    background-color: lightgreen;
+}
+
+
+::ng-deep .mat-expansion-panel-body {
+    background-color: teal;
+}
+* {
+    border-radius: 5px;
+}
+p {
+    height: 400px;
+}

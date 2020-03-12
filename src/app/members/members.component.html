@@ -1,0 +1,27 @@
+<div gdAreas=". picture info . | . letter letter ." gdGap="10px" gdRows="1fr 1fr"
+    gdColumns='.5fr 2fr 1fr .5fr' [ngStyle]="{'background-color': 'pink', 'height' : '100vh'}">
+    <div class='picture' gdArea="picture" [ngStyle]="{'background-color': 'cadetblue', 'border-radius': '5px'}">
+        <div fxLayout="row" [ngStyle]="{'height': '100%'}">
+            <div (mouseenter)="hovered(1)" (mouseleave)="hovered(0)" class="accordion" style="background-image: url(https://images.pexels.com/photos/692064/pexels-photo-692064.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb)"></div>
+            <div (mouseenter)="hovered(2)" (mouseleave)="hovered(0)" class="accordion" style="background-image: url(https://images.pexels.com/photos/97904/pexels-photo-97904.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb)"></div>
+            <div (mouseenter)="hovered(3)" (mouseleave)="hovered(0)" class="accordion" style="background-image: url(https://images.pexels.com/photos/681405/pexels-photo-681405.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb)"></div>
+            <div (mouseenter)="hovered(4)" (mouseleave)="hovered(0)" class="accordion" style="background-image: url(https://images.pexels.com/photos/731082/pexels-photo-731082.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb)"></div>
+        </div>
+    </div>
+    <div  gdArea="info" [ngStyle]="{'background-color': 'coral', 'border-radius': '5px'}">
+        <div #info class='info'>
+            <h3 class="mat-display-2" *ngIf="actualPicture == 1">email/git do moises</h3>
+            <h3 class="mat-display-2" *ngIf="actualPicture == 2">email/git da carol</h3>
+            <h3 class="mat-display-2" *ngIf="actualPicture == 3">email/git do frizzo</h3>
+            <h3 class="mat-display-2" *ngIf="actualPicture == 4">email/git do mateus</h3>
+        </div> 
+    </div>
+    <div gdArea="letter" [ngStyle]="{'background-color': 'darkcyan', 'border-radius': '5px'}">
+        <div #letter class='letter'>
+            <h3 class="mat-display-2" *ngIf="actualPicture == 1">funcões do moises</h3>
+            <h3 class="mat-display-2" *ngIf="actualPicture == 2">funções da carol</h3>
+            <h3 class="mat-display-2" *ngIf="actualPicture == 3">funções do frizzo</h3>
+            <h3 class="mat-display-2" *ngIf="actualPicture == 4">funções do mateus</h3>
+        </div>
+    </div>
+</div>

@@ -1,4 +1,4 @@
-<mat-slider min="1" max="100" step="10" value="1"></mat-slider>
+<!-- <mat-slider min="1" max="100" step="10" value="1"></mat-slider>
 
 <div fxLayout='row' fxLayoutAlign='space-evenly center' class="zero">
 
@@ -8,4 +8,13 @@
   <div>4</div>
   <div>5</div>
 
-</div>
+</div> -->
+
+<mat-tab-group mat-stretch-tabs>
+  <mat-tab label="Home"><app-home></app-home></mat-tab>
+  <mat-tab label="Problem"><app-problem></app-problem></mat-tab>
+  <mat-tab label="Planning"><app-planning></app-planning></mat-tab>
+  <mat-tab label="Development"><app-development></app-development></mat-tab>
+  <mat-tab label="Results"><app-results></app-results></mat-tab>
+  <mat-tab label="Members"><app-members></app-members></mat-tab>
+</mat-tab-group>
