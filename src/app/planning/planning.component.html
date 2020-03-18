@@ -1,3 +1,15 @@
-<div [ngStyle]="{'background-color': 'grey', 'border-radius': '5px', 'height' : '100vh'}">
+<mat-tab-group mat-stretch-tabs>
+    <mat-tab label="Análise de Risco">
+        <app-risks></app-risks>
+    </mat-tab>
+    <mat-tab label="Preços">
+        <app-prices></app-prices>
+    </mat-tab>
+    <mat-tab label="Cronograma">
+
+    </mat-tab>
+</mat-tab-group>
+
+<!-- <div [ngStyle]="{'background-color': 'grey', 'border-radius': '5px', 'height' : '100vh'}">
     <h2 class="mat-display-3">analise de risco, preço, cronograma</h2>
-</div>
+</div> -->

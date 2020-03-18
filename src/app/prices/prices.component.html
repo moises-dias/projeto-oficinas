@@ -1,0 +1,35 @@
+<div class="mat-elevation-z8" [ngStyle]="{'background-color': 'royalblue', 'height' : '500px'}">
+    <mat-table [dataSource]="dataSource" matSort>
+        <!-- Item Column -->
+        <ng-container matColumnDef="item">
+            <mat-header-cell *matHeaderCellDef mat-sort-header> Item </mat-header-cell>
+            <mat-cell *matCellDef="let element"> {{element.item}} </mat-cell>
+            <mat-footer-cell *matFooterCellDef></mat-footer-cell>
+        </ng-container>
+
+        <!-- Price Column -->
+        <ng-container matColumnDef="price">
+            <mat-header-cell *matHeaderCellDef mat-sort-header> Price </mat-header-cell>
+            <mat-cell *matCellDef="let element"> {{element.price}} </mat-cell>
+            <mat-footer-cell *matFooterCellDef></mat-footer-cell>
+        </ng-container>
+
+        <!-- Ammount Column -->
+        <ng-container matColumnDef="ammount">
+            <mat-header-cell *matHeaderCellDef mat-sort-header> Ammount </mat-header-cell>
+            <mat-cell *matCellDef="let element"> {{element.ammount}} </mat-cell>
+            <mat-footer-cell *matFooterCellDef>total</mat-footer-cell>
+        </ng-container>
+
+        <!-- Subtotal Column -->
+        <ng-container matColumnDef="subtotal">
+            <mat-header-cell *matHeaderCellDef mat-sort-header> Subtotal </mat-header-cell>
+            <mat-cell *matCellDef="let element"> {{element.subtotal}} </mat-cell>
+            <mat-footer-cell *matFooterCellDef>12345</mat-footer-cell>
+        </ng-container>
+
+        <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+        <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+        <mat-footer-row *matFooterRowDef="displayedColumns"></mat-footer-row>
+    </mat-table>
+</div>

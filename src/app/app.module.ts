@@ -8,6 +8,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSliderModule } from '@angular/material/slider';
 import {MatTabsModule} from '@angular/material/tabs';
 import {MatExpansionModule} from '@angular/material/expansion';
+import {MatTableModule} from '@angular/material/table';
 
 import {FlexLayoutModule} from '@angular/flex-layout';
 import { HomeComponent } from './home/home.component';
@@ -16,6 +17,9 @@ import { PlanningComponent } from './planning/planning.component';
 import { DevelopmentComponent } from './development/development.component';
 import { ResultsComponent } from './results/results.component';
 import { MembersComponent } from './members/members.component';
+import { RisksComponent } from './risks/risks.component';
+import { PricesComponent } from './prices/prices.component';
+import { MatSortModule } from '@angular/material/sort';
 
 @NgModule({
   declarations: [
@@ -25,7 +29,9 @@ import { MembersComponent } from './members/members.component';
     PlanningComponent,
     DevelopmentComponent,
     ResultsComponent,
-    MembersComponent
+    MembersComponent,
+    RisksComponent,
+    PricesComponent
   ],
   imports: [
     BrowserModule,
@@ -34,6 +40,8 @@ import { MembersComponent } from './members/members.component';
     MatSliderModule,
     MatTabsModule,
     MatExpansionModule,
+    MatTableModule,
+    MatSortModule,
     FlexLayoutModule
   ],
   providers: [],

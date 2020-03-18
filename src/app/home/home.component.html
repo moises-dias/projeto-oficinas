@@ -1,12 +1,24 @@
-<div gdAreas="foto foto | info info | info info" gdGap="10px" gdRows="1.5fr 1fr 1fr" gdColumns='1fr 1fr'
-    [ngStyle]="{'background-color': 'pink', 'height' : '100vh'}">
-    <div class='foto' gdArea="foto" [ngStyle]="{'background-color': 'cadetblue', 'border-radius': '5px'}">
-        <div class="accordion" [ngStyle]="{'height': '100%', 'border-radius': '5px'}"
+<div gdAreas=" . . . . . | . titulo . foto . | . sub-titulo . foto . | . . . . ." 
+    gdGap="10px" gdRows=".2fr 1fr 1fr .3fr"
+    gdColumns='.4fr 5fr .3fr 3.5fr .2fr' [ngStyle]="{'background-color': 'pink', 'height' : '100vh'}">
+
+    <div class='foto' gdArea="foto" [ngStyle]="{'background-color': 'cadetblue', 'border-radius': '40px'}">
+
+        <div class="accordion" [ngStyle]="{'height': '100%', 'border-radius': '40px'}"
             style="background-image: url(https://rbj.com.br/wp-content/uploads/2020/01/UTFPR-1-1140x640.jpg)">
         </div>
+
     </div>
-    <div gdArea="info" [ngStyle]="{'background-color': 'coral', 'border-radius': '5px'}">
-        <h1 class="mat-display-4">titulo</h1>
-        <h2 class="mat-display-3">descrição, vantagens etc</h2>
+
+    <div gdArea="titulo" gdGridAlign='stretch end'
+        [ngStyle]="{'margin': '0', 'padding': '0', 'background-color': 'coral', 'border-radius': '5px'}">
+        <h1 [ngStyle]="{'margin': '0', 'padding': '0'}" class="mat-display-4">Pocket energy</h1>
     </div>
+
+    <div gdArea="sub-titulo" gdGridAlign='stretch start'
+        [ngStyle]="{'margin': '0', 'padding': '0', 'background-color': 'cadetblue', 'border-radius': '5px'}">
+        <h2 [ngStyle]="{'margin': '0', 'padding': '0'}" class="mat-display-3">Power banks ao seu alcance em qualquer
+            lugar da cidade</h2>
+    </div>
+
 </div>

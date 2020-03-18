@@ -1,3 +1,61 @@
-<div [ngStyle]="{'background-color': 'cadetblue', 'border-radius': '5px', 'height' : '100vh'}">
+<!-- <div [ngStyle]="{'background-color': 'cadetblue', 'border-radius': '5px', 'height' : '100vh'}">
     <h2 class="mat-display-3">descricao do problema, imagens etc</h2>
+</div> -->
+
+<div gdAreas=" . . . . . | . titulo titulo titulo . | . sub-titulo sub-titulo sub-titulo . | . imagem-1 imagem-2 imagem-3 . | . descricao-1 descricao-2 descricao-3 . | . . . . ." 
+    gdGap="10px" gdRows=".2fr 1fr 2fr 2fr 2fr .2fr"
+    gdColumns='1fr 1fr 1fr 1fr 1fr' [ngStyle]="{'background-color': 'pink', 'height' : '150vh'}">
+
+    <div class='imagem-1' gdArea="imagem-1" [ngStyle]="{'background-color': 'cadetblue', 'border-radius': '40px'}">
+
+        <div class="accordion" [ngStyle]="{'height': '100%', 'border-radius': '40px'}"
+            style="background-image: url(https://rbj.com.br/wp-content/uploads/2020/01/UTFPR-1-1140x640.jpg)">
+        </div>
+
+    </div>
+
+    <div class='imagem-2' gdArea="imagem-2" [ngStyle]="{'background-color': 'cadetblue', 'border-radius': '40px'}">
+
+        <div class="accordion" [ngStyle]="{'height': '100%', 'border-radius': '40px'}"
+            style="background-image: url(https://rbj.com.br/wp-content/uploads/2020/01/UTFPR-1-1140x640.jpg)">
+        </div>
+
+    </div>
+
+    <div class='imagem-3' gdArea="imagem-3" [ngStyle]="{'background-color': 'cadetblue', 'border-radius': '40px'}">
+
+        <div class="accordion" [ngStyle]="{'height': '100%', 'border-radius': '40px'}"
+            style="background-image: url(https://rbj.com.br/wp-content/uploads/2020/01/UTFPR-1-1140x640.jpg)">
+        </div>
+
+    </div>
+
+    <div gdArea="titulo" gdGridAlign='stretch end'
+        [ngStyle]="{'margin': '0', 'padding': '0', 'background-color': 'coral', 'border-radius': '5px'}">
+        <h3 [ngStyle]="{'margin': '0', 'padding': '0'}" class="mat-display-2">A bateria é um dos maiores limitantes no uso de smartphones.</h3>
+    </div>
+
+    <div gdArea="sub-titulo" gdGridAlign='stretch start'
+        [ngStyle]="{'margin': '0', 'padding': '0', 'background-color': 'cadetblue', 'border-radius': '5px'}">
+        <h1 [ngStyle]="{'margin': '0', 'padding': '0'}" class="mat-headline">Atualmente nós possuímos uma grande dependência em dispositivos móveis no dia a dia, e uma das maiores dificuldades enfrentadas pelos usuários é a curta duração da bateria. Considerando a carga de um celular exige tempo e um local apropriado, impedindo o deslocamento do usuário, a Pocket Energy propõe solucionar esse problema através de estações de aluguel de power banks. </h1>
+    </div>
+
+    <div gdArea="descricao-1" 
+        [ngStyle]="{'margin': '0', 'padding': '0', 'background-color': 'cadetblue', 'border-radius': '5px'}">
+        <h4 class="mat-display-1" [ngStyle]="{'margin': '0', 'padding': '0', 'background-color': 'cadetblue', 'border-radius': '5px', 'font-weight': 'bold'}">Não se atrase para seus compromissos</h4>
+        <h1 class="mat-headline" [ngStyle]="{'margin': '0', 'padding': '0', 'background-color': 'cadetblue', 'border-radius': '5px'}">Com os power banks da Pocket energy você não precisa ficar aguardando em um local fixo seu celular carregar, mas sim se deslocar a vontade para realizar suas tarefas do dia a dia.</h1>
+    </div>
+
+    <div gdArea="descricao-2" gdGridAlign='stretch start'
+        [ngStyle]="{'margin': '0', 'padding': '0', 'background-color': 'cadetblue', 'border-radius': '5px'}">
+        <h4 class="mat-display-1" [ngStyle]="{'margin': '0', 'padding': '0', 'background-color': 'cadetblue', 'border-radius': '5px', 'font-weight': 'bold'}">Tem um Pocket energy sempre perto de você</h4>
+        <h1 class="mat-headline" [ngStyle]="{'margin': '0', 'padding': '0', 'background-color': 'cadetblue', 'border-radius': '5px'}">Estamos distribuídos nas principais localidades da cidade como shoppings, terminais de ônibus, praças e lojas.</h1>
+    </div>
+
+    <div gdArea="descricao-3" gdGridAlign='stretch start'
+        [ngStyle]="{'margin': '0', 'padding': '0', 'background-color': 'cadetblue', 'border-radius': '5px'}">
+        <h4 class="mat-display-1" [ngStyle]="{'margin': '0', 'padding': '0', 'background-color': 'cadetblue', 'border-radius': '5px', 'font-weight': 'bold'}">É simples e fácil pegar o seu Pocket energy!</h4>
+        <h1 class="mat-headline" [ngStyle]="{'margin': '0', 'padding': '0', 'background-color': 'cadetblue', 'border-radius': '5px'}">Basta instalar nosso aplicativo disponível na playstore, cadastrar, ler o QR code e utilizar a vontade!</h1>
+    </div>
+
 </div>
